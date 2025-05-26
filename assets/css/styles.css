@@ -126,8 +126,13 @@ section .card .card__author p {
   font-weight: var(--font-weight-800);
 }
 .attribution {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 2px solid var(--gray-950);
   height: 5vh;
   background-color: var(--yellow-background-color);
+  padding-top: 0.5rem;
 }
 
 .attribution a {
