@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --yellow-background-color: hsl(47, 88%, 63%);
+  --white-background-color: hsl(0, 0%, 100%);
+  --gray-500: hsl(0, 0%, 42%);
+  --gray-950: hsl(0, 0%, 7%);
+  --font-size-16: 16px;
+  --font-weight-500: 500;
+  --font-weight-800: 800;
+}
+
+body {
+  font-size: var(--font-size-16);
+  font-family: "Ubuntu", sans-serif;
+  font-weight: var(--font-weight-500);
+  font-style: normal;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  min-height: 95vh;
+  width: 100vw;
+  background-color: var(--yellow-background-color);
+}
+
+section .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border: 1px solid var(--gray-500);
+  width: 300px;
+  max-width: 600px;
+  padding: 1rem;
+  background-color: var(--white-background-color);
+  border-radius: 1rem;
+  box-shadow: 5px 5px 0 #000000;
+}
+
+section .card .card__image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  margin: 0 20rem;
+  width: 250px;
+  background-color: var(--white-background-color);
+}
+section .card .card__image img {
+  border-radius: 1rem;
+  width: 270px;
+  background-color: var(--white-background-color);
+}
+
+/* Card  Call for Action cfa */
+section .card .card__cfa {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.7rem;
+}
+section .card .card__cfa button {
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  border: none;
+  background-color: var(--yellow-background-color);
+  color: var(--gray-950);
+  font-weight: var(--font-weight-800);
+  font-size: 0.725rem;
+  cursor: pointer;
+}
+section .card .card__cfa p {
+  font-size: 0.725rem;
+  color: var(--gray-950);
+}
+
+section .card .card__content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+}
+section .card .card__content h3 {
+  color: var(--gray-950);
+}
+
+section .card .card__content p {
+  font-size: 0.725rem;
+  color: var(--gray-500);
+  line-height: 1.2rem;
+}
+
+section .card .card__author {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+section .card .card__author img {
+  width: 24px;
+}
+
+section .card .card__author p {
+  font-size: 0.725rem;
+  color: var(--gray-950);
+  font-weight: var(--font-weight-800);
+}
+.attribution {
+  height: 5vh;
+  background-color: var(--yellow-background-color);
+}
+
+.attribution a {
+  color: var(--gray-950);
+}
